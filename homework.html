@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .box1 {
+        margin: auto;
+        width: 90%;
+        height: 12.5%;
+        /* background-color: rgb(125, 63, 205); */
+      }
+      .box2 {
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        /* background-color: peru; */
+        text-align: center;
+        /* background-color: rgb(24, 189, 46); */
+        /* margin: 1.5rem; */
+      }
+      img {
+        width: 50%;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .t-left {
+        text-align: left;
+      }
+
+      hr {
+        width: 100%;
+        background-color: gray;
+        margin: 1rem 0;
+      }
+      .show {
+        display: none;
+        font-size: 2rem;
+        margin: 1rem;
+      }
+      .hidden {
+        display: block;
+      }
+
+      @media (min-width: 992px) {
+        body {
+          overflow: hidden;
+        }
+        .container {
+          display: flex;
+          margin: auto;
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #WDA {
+          position: absolute;
+          justify-content: center;
+          align-items: center;
+
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        #HTML {
+          position: absolute;
+          justify-content: flex-start;
+          align-items: flex-start;
+          left: -40%;
+          top: 8%;
+        }
+        #CSS {
+          position: absolute;
+          left: -22%;
+          top: 0;
+        }
+        #JS {
+          position: absolute;
+          left: -33%;
+          top: 475px;
+        }
+        #jQ {
+          position: absolute;
+          left: -19%;
+          top: 750px;
+        }
+        #Bs {
+          position: absolute;
+          left: 22%;
+          bottom: 45%;
+        }
+        #Sa {
+          position: absolute;
+          left: 38%;
+          top: 25%;
+        }
+        #Vue {
+          position: absolute;
+          right: -25%;
+          top: 70%;
+        }
+        .t-left {
+          display: none;
+        }
+        #WDA img {
+          width: 15%;
+        }
+        img {
+          width: 9%;
+        }
+        hr {
+          display: none;
+        }
+        .show {
+          display: block;
+        }
+        .hidden {
+          display: none;
+        }
+        .sen {
+          width: 9%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 34%;
+          top: 242px;
+          transform: rotate(33deg);
+        }
+
+        .sen2 {
+          width: 22%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 19%;
+          top: 365px;
+          transform: rotate(12deg);
+        }
+        .sen3 {
+          width: 18%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 24%;
+          top: 522px;
+          transform: rotate(-13deg);
+        }
+        .sen4 {
+          width: 13%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 32%;
+          top: 643px;
+          transform: rotate(-44deg);
+        }
+        .sen5 {
+          width: 11%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 57%;
+          top: 229px;
+          transform: rotate(-31deg);
+        }
+        .sen6 {
+          width: 21%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 61%;
+          top: 403px;
+          transform: rotate(-16deg);
+        }
+        .sen7 {
+          width: 11%;
+          height: 5px;
+          background-color: gray;
+          position: absolute;
+          left: 59%;
+          top: 591px;
+          transform: rotate(29deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sen"></div>
+      <div class="sen2"></div>
+      <div class="sen3"></div>
+      <div class="sen4"></div>
+      <div class="sen5"></div>
+      <div class="sen6"></div>
+      <div class="sen7"></div>
+      <!-- WDA -->
+      <div class="box1">
+        <div class="box2" id="WDA">
+          <img src="./WDA.png" />
+          <h1>泰山職訓局</h1>
+          <br />
+          <h2>從零開始的網頁設計課程</h2>
+          <p>轉職網頁開發人員　掌握就業必備職能<br />由淺入深學習技術　強化職場的競爭力</p>
+        </div>
+      </div>
+
+      <hr />
+      <div class="box1">
+        <!-- HTML -->
+        <div class="box2" id="HTML">
+          <img src="./HTML.png" />
+          <p class="show">Html</p>
+
+          <br />
+          <h3 class="t-left hidden">Html</h3>
+          <p class="t-left">
+            超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。 HTML 是一種基礎技術，常與 CSS、JavaScript
+            一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行 動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+            的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- CSS3 -->
+      <div class="box1">
+        <div class="box2" id="CSS">
+          <img src="./CSS.png" />
+          <p class="show">CSS3</p>
+          <br />
+          <h3 class="t-left hidden">CSS3</h3>
+          <p class="t-left">
+            層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件（如 HTML 文件或 XML
+            應用）添加樣式（字型、間距和顏色等）的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- JS -->
+      <div class="box1">
+        <div class="box2" id="JS">
+          <img src="./JS.png" />
+          <p class="show">JavaScript</p>
+          <br />
+          <h3 class="t-left hidden">JavaScript</h3>
+          <p class="t-left">
+            JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是
+            一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- jQ -->
+      <div class="box1">
+        <div class="box2" id="jQ">
+          <img src="./jQ.png" />
+          <p class="show">jQuery</p>
+          <br />
+          <h3 class="t-left hidden">jQuery</h3>
+          <p class="t-left">
+            jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的 網站中，有 65% 使用了jQuery，是目前最受歡迎的 JavaScript
+            函式庫。
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- Bs -->
+      <div class="box1">
+        <div class="box2" id="Bs">
+          <img src="./Bootstrap.png" />
+          <p class="show">Bootstrap</p>
+          <br />
+          <h3 class="t-left hidden">Bootstrap</h3>
+          <p class="t-left">
+            Bootstrap 是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與 之對應的「後端」是在伺服器上面執行的程式碼）框架，包括
+            HTML、CSS及JavaScript 的框架，提供字體排印、 表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- Sass -->
+      <div class="box1">
+        <div class="box2" id="Sa">
+          <img src="./Sass.png" />
+          <p class="show">Sass</p>
+          <br />
+          <h3 class="t-left hidden">Sass</h3>
+          <p class="t-left">
+            軟體即服務（英語：Software as a Service，縮寫：SaaS，發音：sæs或 sɑs），亦可稱為「按需即用軟體」（即「一經要求，即可使用」），它是一種軟體交付模式。
+            在這種交付模式中，軟體僅需通過網路，不須經過傳統的安裝步驟即可使用，軟體及其相關的資料集中代管於雲端服務。
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- V.j -->
+      <div class="box1">
+        <div class="box2" id="Vue">
+          <img src="./Vue.js.png" />
+          <p class="show">Vue.js</p>
+          <br />
+          <h3 class="t-left hidden">Vue.js</h3>
+
+          <p class="t-left">
+            Vue.js是一個用於建立使用者介面的開源JavaScript框架，也是一個建立單頁應用的Web應用框架。
+            2016年一項針對JavaScript的調查表明，Vue有著89%的開發者滿意度。在GitHub上，該專案平均每天能收穫95顆星，為Github有史以來星標數第3多的專案。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
